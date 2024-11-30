@@ -1,0 +1,23 @@
+   /* Add border to navbar */
+   .navbar {
+    border-left: 3px solid #007bff; /* Blue color border on the left */
+    border-right: 3px solid #007bff; /* Blue color border on the right */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  /* Navbar hover effect */
+  .navbar:hover {
+    background-color: #007bff; /* Change navbar background color on hover */
+  }
+  /* Navbar links hover effect */
+  .navbar .nav-link {
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  .navbar .nav-link:hover {
+    color: #11cebe; /* Change link color to white on hover */
+  }
+  /* Active link styling */
+  .navbar .nav-link.active {
+    font-weight: bold;
+    color: #007bff;
+  }
