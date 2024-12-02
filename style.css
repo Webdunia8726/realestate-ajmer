@@ -12,9 +12,12 @@
   .navbar .nav-link {
     color: #333;
     transition: color 0.3s ease;
+    border-right: 1px solid rgb(218, 214, 214);
+    padding: 20px 20px;
+    
   }
   .navbar .nav-link:hover {
-    color: #11cebe; /* Change link color to white on hover */
+    background-color: rgb(232, 236, 240);
   }
   /* Active link styling */
   .navbar .nav-link.active {
@@ -23,3 +26,184 @@
   }
 
    
+
+ 
+  
+  .btn-primary {
+    background-color: #3498db;
+    border-color: #2980b9;
+  }
+ 
+  .btn-custom {
+    background-color: #16a085;
+    color: #fff;
+  }
+  .btn-custom:hover {
+    background-color: #138d75;
+  }
+  .form-check-label {
+    font-size: 12px;
+    color: #7f8c8d;
+  }
+
+  /* Animated Gradient Button */
+.btn-animated {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none; /* Removes underline */
+  border: none;
+  background: linear-gradient(90deg, #ff6b6b, #f39c12, #16a085, #3498db, #9b59b6);
+  background-size: 200% 100%;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  animation: gradient-wave 3s linear infinite;
+  width: 300px;
+}
+
+.btn-animated:hover {
+  transform: scale(1.1);
+}
+
+/* Gradient Animation */
+@keyframes gradient-wave {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.button-container {
+  display: flex;
+  flex-direction: column; /* Stacks buttons vertically */
+  gap: 15px; /* Adds space between buttons */
+  margin-top: 20px;
+}
+
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  /* Button Styles for Smaller Screens */
+  .btn-animated {
+    width: 100%; /* Full width on small screens */
+    font-size: 14px; /* Smaller font for better fit */
+    padding: 8px 15px; /* Adjust padding for smaller screens */
+  }
+.bg-hero{
+  padding: 40px;
+  background-color: rgb(245, 240, 240);
+}
+.formhero{
+  padding: 30px;
+}
+  .button-container {
+    gap: 10px; /* Reduce space between buttons */
+  }
+
+  .btn-primary,
+  .btn-custom {
+    width: 100%; /* Full width for regular buttons */
+    margin-bottom: 10px; /* Adds spacing between buttons */
+  }
+}
+
+
+/* price
+ */
+ .pricing-section {
+  background-color: #f4f4f4;
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.table {
+  background: #ffffff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table thead {
+  background-color: #2c3e50;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.table th, .table td {
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.table td {
+  color: #34495e;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-bordered th, .table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.text-muted {
+  font-size: 0.9rem;
+}
+
+.btn-primary {
+  background-color: #3498db;
+  border-color: #2980b9;
+  text-transform: uppercase;
+  padding: 12px 30px;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image-container .btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #3498db;
+  color: white;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container .btn:hover {
+  background-color: #2980b9;
+  transform: translateX(-50%) scale(1.05);
+}
