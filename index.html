@@ -7,7 +7,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- FontAwesome Icons -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -26,23 +26,21 @@
         <ul class="navbar-nav ms-auto">
         
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-tag"></i> Price</a>
+            <a class="nav-link" href="#pricing"><i class="fas fa-tag"></i> Price</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-map"></i> Site Plan</a>
+            <a class="nav-link" href="#master-floor-plan"><i class="fas fa-map"></i> Site Plan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-star"></i> Amenities</a>
+            <a class="nav-link" href="#amenities"><i class="fas fa-star"></i> Amenities</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-images"></i> Gallery</a>
+            <a class="nav-link" href="#gallery"><i class="fas fa-images"></i> Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-map-marker-alt"></i> Location</a>
+            <a class="nav-link" href="#location"><i class="fas fa-map-marker-alt"></i> Location</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="fas fa-video"></i> Virtual Tour</a>
-          </li>
+       
           <li class="nav-item">
             <a class="nav-link" href="#"><i class="fas fa-download"></i> Download Brochure</a>
           </li>
@@ -80,7 +78,7 @@
   <div class="row">
     <!-- Left Column -->
     <div class="col-md-6 bg-hero mt-3" >
-      <h2 class="heading">Booking Open</h2>
+      <h2 class="highlight-heading">Booking Open</h2>
       <h3>Ajmera PVLR</h3><h6>At Bhandup (W), Mumbai</h6>
       <p>By Ajmera Group</p>
 <div class="details1">
@@ -109,34 +107,40 @@
 <div class="col-md-6 formhero mt-3">
   <h2 class="heading text-center">Organize Site Visit</h2>
   <div class="d-flex justify-content-between mb-3">
-    <button class="btn btn-primary me-2 w-50">
+    <a href="https://wa.me/YourPhoneNumber" class="btn btn-primary me-2 w-50" target="_blank">
       <i class="fab fa-whatsapp"></i> WhatsApp Now
-    </button>
-    <button class="btn btn-custom w-50">
+    </a>
+    
+    <a href="mailto:youremail@example.com" class="btn btn-custom w-50">
       <i class="fas fa-envelope"></i> Enquire Now
-    </button>
+    </a>
+
   </div>
-  <form>
+<div class="text-center">
+  <a href="" class="btn btn-outline-primary"> <i class="fa-solid fa-phone"></i> +91 6392034733</a>
+
+</div>
+  <form action="send-email.php" method="POST">
     <div class="mb-3">
-      <label for="name" class="form-label">Name</label>
-      <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
     </div>
     <div class="mb-3">
-      <label for="mobile" class="form-label">Mobile No</label>
-      <input type="tel" class="form-control" id="mobile" placeholder="+91" required>
+        <label for="mobile" class="form-label">Mobile No</label>
+        <input type="tel" class="form-control" id="mobile" name="mobile" placeholder="+91" required>
     </div>
     <div class="mb-3">
-      <label for="email" class="form-label">E-Mail Address</label>
-      <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+        <label for="email" class="form-label">E-Mail Address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
     </div>
     <div class="form-check mb-3">
-      <input class="form-check-input" type="checkbox" id="consent" required>
-      <label class="form-check-label" for="consent">
-        I give my consent for the privacy policy to apply to the processing of the provided data. I give authority to the website owner and its representatives permission to contact me via phone, text, email, or WhatsApp with its offers and products. This agreement takes precedence over any DNC/NDNC registration.
-      </label>
+        <input class="form-check-input" type="checkbox" id="consent" required>
+        <label class="form-check-label" for="consent">
+          I give my consent for the privacy policy to apply to the processing of the provided data. I give authority to the website owner and its representatives permission to contact me via phone, text, email, or whatsapp with its offers and products. This agreement takes precedence over any DNC/NDNC registration.        </label>
     </div>
     <button type="submit" class="btn btn-primary w-100">Submit</button>
-  </form>
+</form>
+
 </div>
 
 
@@ -150,7 +154,7 @@
     <div class="row align-items-center">
       <!-- Left Column: Image -->
       <div class="col-lg-6 text-center">
-        <img src="path-to-image.jpg" alt="Ajmera PVLR" class="img-fluid rounded shadow">
+        <img src="images/ajmare-section2.jpg" alt="Ajmera PVLR" class="img-fluid rounded shadow">
       </div>
       <!-- Right Column: Content -->
       <div class="col-lg-6">
@@ -173,7 +177,7 @@
           Embrace a lifestyle of leisure and community with the luxury that Ajmera Bhandup has to offer. 
           Every detail is tailored for your comfort, ensuring a vibrant living experience. 
         </p>
-        <a href="https://example.com" class="btn btn-primary mt-3">Learn More</a>
+        <a href="https://example.com" class="btn btn-primary mt-3">Contact Us</a>
       </div>
     </div>
   </div>
@@ -233,6 +237,266 @@
   </div>
 </section>
 
+<!-- fllor plan -->
+<section id="master-floor-plan" class="py-5">
+  <h1 class="text-center mb-4">Site & Floor Plan</h1>
+  <div class="container">
+    <div class="row">
+      <!-- Left side: Master Plan -->
+       
+      <div class="col-md-6">
+        <h3 class="text-center">Master Plan</h3>
+
+        <div class="card master-plan-card mt-2">
+          <img src="images/master.jpg" alt="Master Plan" class="card-img-top img-fluid">
+          <div class="card-img-overlay">
+            <a href="https://example.com" class="btn btn-primary">View Master Plan</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side: Floor Plan -->
+      <div class="col-md-6">
+        <div class="row">
+          <!-- 1 BHK Floor Plan -->
+          <h3 class="text-center">Floor Plan</h3>
+
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="images/1bhk.jpg" alt="1 BHK Floor Plan" class="card-img-top img-fluid">
+              <div class="card-body text-center">
+                <h5 class="card-title">1 BHK Unit Plan</h5>
+                <p class="card-text">A perfect layout for your 1 BHK apartment, designed for comfort.</p>
+                <a href="https://example.com" class="btn btn-primary">1 BHK</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 BHK Floor Plan -->
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img src="images/2bhk.jpg" alt="2 BHK Floor Plan" class="card-img-top img-fluid">
+              <div class="card-body text-center">
+                <h5 class="card-title">2 BHK Unit Plan</h5>
+                <p class="card-text">Explore the spacious design of our 2 BHK apartments, tailored for modern living.</p>
+                <a href="https://example.com" class="btn btn-primary">2 BHK</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="amenities-section" id="amenities">
+  <div class="container">
+    <h2 class="section-title text-center">Amenities</h2>
+    <div class="row">
+      <div class="col-md-4 col-sm-6 ">
+        <div class="card amenity-card">
+          <img src="images/basketball.png" class="card-img-top" alt="Basketball Court">
+          <div class="card-body">
+            <h5 class="card-title">Basketball Court</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 ">
+        <div class="card amenity-card">
+          <img src="images/running-man.png" class="card-img-top" alt="Jogging Track">
+          <div class="card-body">
+            <h5 class="card-title">Jogging Track</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 ">
+        <div class="card amenity-card">
+          <img src="images/billiard.png" class="card-img-top" alt="Billiards Table">
+          <div class="card-body">
+            <h5 class="card-title">Billiards Table</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 ">
+        <div class="card amenity-card">
+          <img src="images/swimming-pool.png" class="card-img-top" alt="Swimming Pools">
+          <div class="card-body">
+            <h5 class="card-title">Swimming Pools</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6 ">
+        <div class="card amenity-card">
+          <img src="images/gm.svg" class="card-img-top" alt="Gymnasium">
+          <div class="card-body">
+            <h5 class="card-title">GYMNASIUM</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="card amenity-card">
+          <img src="images/tennis.png" class="card-img-top" alt="Tennis Court">
+          <div class="card-body">
+            <h5 class="card-title">Tennis Court</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- gallery -->
+
+<section class="gallery-section" id="gallery">
+  <div class="container">
+    <h2 class="section-title text-center">Gallery</h2>
+
+    <!-- Buttons to toggle between Interior and Exterior -->
+    <div class="button-group text-center mb-4">
+      <button id="interior-btn" class="button active" onclick="toggleGallery('interior')">Interior</button>
+      <button id="exterior-btn" class="button" onclick="toggleGallery('exterior')">Exterior</button>
+    </div>
+
+    <!-- Gallery Section -->
+    <div id="interior-gallery" class="gallery-content">
+      <div class="gallery-card">
+        <img src="images/1.jpg" alt="Interior Image 1">
+      </div>
+      <div class="gallery-card">
+        <img src="images/2.jpg" alt="Interior Image 2">
+      </div>
+      <div class="gallery-card">
+        <img src="images/3.jpg" alt="Interior Image 3">
+      </div>
+      <div class="gallery-card">
+        <img src="images/4.jpg" alt="Interior Image 4">
+      </div>
+    </div>
+
+    <div id="exterior-gallery" class="gallery-content" style="display: none;">
+      <div class="gallery-card">
+        <img src="images/g1.jpg" alt="Exterior Image 1">
+      </div>
+      <div class="gallery-card">
+        <img src="images/g2.jpg" alt="Exterior Image 2">
+      </div>
+      <div class="gallery-card">
+        <img src="images/g3.jpg" alt="Exterior Image 3">
+      </div>
+      <div class="gallery-card">
+        <img src="images/g4.jpg" alt="Exterior Image 4">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- map location -->
+<section class="map-view-section" id="location">
+  <div class="container">
+    <h2 class="section-title text-center">Map View</h2>
+    
+    <div class="row">
+      <!-- Left side: Location Map -->
+      <div class="col-md-6 map-container">
+        <div class="map">
+          <!-- Embed map or image -->
+          <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_CODE" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="know-more-btn text-center mt-3">
+          <button class="btn-know-more">Know More About Location</button>
+        </div>
+      </div>
+
+      <!-- Right side: Location Details -->
+      <div class="col-md-6 location-details">
+        <h3 class="location-title">Location Map</h3>
+        <ul class="location-info">
+          <li><strong>Proposed Metro Station</strong> - 5 Mins</li>
+          <li><strong>Bhandup Railway Station</strong> - 10 Mins</li>
+          <li><strong>Kanjurmarg Railway Station</strong> - 10 Mins</li>
+          <li><strong>LBS Marg</strong> - 5 Mins</li>
+          <li><strong>Eastern Express Highway</strong> - 15 Mins</li>
+          <li><strong>Mumbai Airport</strong> - 30 Mins</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about-developer">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="images/g2.jpg" alt="Ajmera Group" class="developer-img">
+      </div>
+      <div class="col-md-6">
+        <h2 class="section-title">About Developer</h2>
+        <p class="developer-description">
+          <strong>Ajmera Group</strong>, widely recognized for their dedication to quality and innovation in real estate, are the developers of the impressive Ajmera Mission Mumbai For All in Bhandup. With a legacy of excellence across numerous projects in India, the Ajmera Group has consistently delivered high-quality construction that meets the diverse needs of urban lifestyles.
+        </p>
+        <p class="developer-description">
+          Their latest development, <strong>Mission Mumbai For All</strong>, exemplifies their mission to create inclusive, accessible housing solutions for the people of Mumbai. Located in the thriving suburb of Bhandup, this project aims to provide a harmonious blend of modern amenities, sustainable living, and community-focused spaces.
+        </p>
+        <p class="developer-description">
+          Ajmera’s attention to detail, from architectural design to lifestyle features, ensures that Mission Mumbai For All stands out as a residential option that promotes comfort, convenience, and connectivity for its residents. With this project, Ajmera Group continues to reinforce its reputation as a trusted name in the Indian real estate market.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<footer class="footer-section">
+  <div class="container">
+    <div class="footer-content">
+      <p class="footer-highlight">This project is RERA registered.</p>
+      <p><strong>Channel Partner RERA Number:</strong> UPRERAAGT14656</p>
+      <p><strong>Project RERA Number:</strong> P51800055387</p>
+      <p class="footer-disclaimer">
+        Disclaimer: Please be advised that this website is not an official site and serves solely as an informational portal managed by a RERA authorized real estate agent. It does not constitute an offer or guarantee of any services. The prices displayed on this website are subject to change without prior notice, and the availability of properties cannot be guaranteed. The images showcased on this website are for representational purposes only and may not accurately reflect the actual properties. We may share your data with Real Estate Regulatory Authority (RERA) registered Developers for further processing as necessary. Additionally, we may send updates and information to the mobile number or email address registered with us.
+      </p>
+      <p>
+        All rights reserved. &copy; 2024 : <strong>Digital Rubix</strong> - A Performance Driven Digital Marketing Company
+      </p>
+      <div class="footer-links">
+        <a href="#">Disclaimer</a> | <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="fixed-buttons">
+  <a href="tel:+911234567890" class="btn call-btn" aria-label="Call Now">
+    <i class="fas fa-phone-alt"></i>
+  </a>
+  <a href="https://wa.me/YourPhoneNumber" target="_blank" class="btn whatsapp-btn" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  function toggleGallery(galleryType) {
+  // Hide both galleries initially
+  document.getElementById('interior-gallery').style.display = 'none';
+  document.getElementById('exterior-gallery').style.display = 'none';
+
+  // Show the selected gallery
+  if (galleryType === 'interior') {
+    document.getElementById('interior-gallery').style.display = 'grid';
+    document.getElementById('exterior-btn').classList.remove('active');
+    document.getElementById('interior-btn').classList.add('active');
+  } else if (galleryType === 'exterior') {
+    document.getElementById('exterior-gallery').style.display = 'grid';
+    document.getElementById('interior-btn').classList.remove('active');
+    document.getElementById('exterior-btn').classList.add('active');
+  }
+}
+
+</script>
 </body>
 </html>
