@@ -1,3 +1,55 @@
+   
+  /* Ensure that navbar items are aligned correctly */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  margin-bottom: 0px !important;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the logo and text horizontally */
+  justify-content: center; /* Center them vertically */
+  text-align: center; /* Center the text */
+}
+
+/* Styling for the logo */
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+/* Text styling below the logo */
+.logo-text {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo-container {
+      flex-direction: column; /* Stack vertically on smaller screens */
+  }
+  
+  
+  .logo-text {
+      font-size: 0.9rem; /* Adjust text size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+      max-height: 50px; /* Further reduce logo size for very small screens */
+  }
+
+  .logo-text {
+      font-size: 0.8rem; /* Further adjust text size */
+  }
+}
+
    /* Add border to navbar */
    .navbar {
     border-left: 3px solid #007bff; /* Blue color border on the left */
@@ -13,7 +65,7 @@
     color: #333;
     transition: color 0.3s ease;
     border-right: 1px solid rgb(218, 214, 214);
-    padding: 20px 20px;
+    padding: 10px 10px;
     
   }
   .navbar .nav-link:hover {
